@@ -37,11 +37,11 @@ public class LoginActivityPresenter implements LoginActivityMVP.Presenter {
         if (user == null){
             if (view != null){
                 view.showUserNotAvailable();
-            } else {
-                if (view != null){
-                    view.setFirstName(user.getFirstName());
-                    view.setLastName(user.getLastName());
-                }
+            }
+        } else {
+            if (view != null){
+                view.setFirstName(user.getFirstName());
+                view.setLastName(user.getLastName());
             }
         }
 
